@@ -17,7 +17,8 @@ public class User {
     @Column(name = "age")
     private int age;
 
-    public User() {}
+    public User() {
+    }
 
     public User(String firstName, int age) {
         this.firstName = firstName;
@@ -53,6 +54,6 @@ public class User {
         return "User : " +
                 "id = " + id +
                 ", firstName = '" + firstName + '\'' +
-                ", age = " + age ;
+                ", age = " + age;
     }
 }
